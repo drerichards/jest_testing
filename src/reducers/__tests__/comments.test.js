@@ -10,3 +10,9 @@ it('Handle actions of type SAVE_COMMENT', () => {
 
     expect(newState).toEqual(['New Comment'])
 })
+
+it('Handle actions of unknown type', () => {
+    const newState = commentsReducer([], {type: 'Lorem Ipsum'})
+
+    expect(newState).toEqual([])
+})
