@@ -10,12 +10,12 @@ beforeEach(() => {
 })
 
 afterEach(() => {
-    wrapped.unmount( )
+    wrapped.unmount()
 })
 
-it('Has text area and button', () => {
+it('Has text area and 2 buttons', () => {
     expect(wrapped.find('textarea').length).toEqual(1)
-    expect(wrapped.find('button').length).toEqual(1)
+    expect(wrapped.find('button').length).toEqual(2)
 })
 
 describe('The text area', () => {
